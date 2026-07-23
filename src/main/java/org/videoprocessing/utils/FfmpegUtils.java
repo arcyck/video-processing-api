@@ -61,7 +61,6 @@ public final class FfmpegUtils {
                     "-show_entries", "format=duration","-sexagesimal",
                     "-v", "quiet",
                     "-of","csv=p=0")
-                    .inheritIO()
                     .start();
         } catch (IOException e) {
             System.err.println("Caught IOException");
